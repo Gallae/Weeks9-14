@@ -12,7 +12,7 @@ public class BodyMovement : MonoBehaviour
     private void Update()
     {
         t += Time.deltaTime;
-
+        //breathing animation
         transform.position = Vector2.up * curveEnd * curve.Evaluate(t);
 
         if(t > 1)
